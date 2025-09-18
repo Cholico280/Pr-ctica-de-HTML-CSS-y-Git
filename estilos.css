@@ -1,3 +1,33 @@
 p {
-  color: red;
+  color: red; 
+  font-size: 20px;
+}
+.contenedor-imagen {
+      display: flex; /* Habilita Flexbox */
+      justify-content: center; /* Centra horizontalmente */
+      align-items: center; /* Centra verticalmente */
+      /* Opcional: para que el centrado vertical funcione, el contenedor debe tener altura */
+      height: 500px; /* Ejemplo de altura */
+      width: 100%; /* Asegura el 100% del ancho */
+  }
+.mi-foto {
+          border: 30px solid #d60e0e; /* Ancho, tipo y color del borde */
+          padding: 10px; /* Opcional: Espacio entre el borde y la imagen */
+          margin: 30px; /* Opcional: Espacio alrededor de la imagen */
+  }
+
+.image-container {
+  /* Opcional: Esto puede ayudar a que la imagen se mantenga en su sitio */
+  overflow: hidden; /* Opcional: Evita que la imagen se salga del contenedor */
+  display: inline-block; /* Permite que el div tome el tamaño de la imagen */
+}
+
+.image-container img {
+  transition: transform 8s ease; /* Transición suave de 8 segundos */
+}
+
+.image-container img:hover {
+  transform: scale(5); /* Agrandar la imagen un 500% */
+  cursor: pointer; /* Opcional: Cambia el cursor a una mano */
+  z-index: 100; /* Opcional: Asegura que la imagen se muestre encima de otros elementos */
 }
